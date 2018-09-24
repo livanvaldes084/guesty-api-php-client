@@ -1,0 +1,29 @@
+{
+    "name": "guesty/guesty-api-php-client",
+    "description": "Simple Guesty Api Client",
+    "keywords": [
+        "library",
+        "guesty",
+        "bundle",
+        "api"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ing.Livan Alejandro Capote Valdés",
+            "email": "livanvaldes084@gmail.com"
+        }
+    ],
+    "type": "library",
+    "require": {
+        "php": ">=5.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "5.2.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Guesty\\GuestyApiPhpClient\\": "src/"
+        }
+    }
+}
