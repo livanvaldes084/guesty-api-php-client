@@ -32,3 +32,26 @@ php composer.phar require guesty/guesty-api-php-client:dev-master
 ```
 require_once '../vendor/autoload.php';
 ```
+
+#### 4- Agregar las credenciales
+
+Añadir los parametros necesarios a parameters.yml.dist
+
+``` bash
+
+    username_guesty: 2534356d564e2d37f403b4390478c27ar
+    password_guesty: fg587ae597dfaca796c12feb1af9169fre
+
+Añadir los parametros necesarios a parameters.yml
+
+``` bash
+
+    username_guesty: 2534356d564e2d37f403b4390478c27ar
+    password_guesty: fg587ae597dfaca796c12feb1af9169fre
+
+Añadir los parametros necesarios a config.yml
+
+``` bash
+
+    username.guesty: "%username_guesty%"
+    password.guesty: "%password_guesty%"

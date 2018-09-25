@@ -9,7 +9,7 @@ Examples
 
         $path = "users";
         try {
-            $info = GuestyApiClient::client($username, $password, $path, 'GET');
+            $info = GuestyApiClient::client($this->container->getParameter('username.guesty'), $this->container->getParameter('password.guesty'), $path, 'GET');
             return $info;
         } catch (GuestyApiException $exception) {
             return false;
