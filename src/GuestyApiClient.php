@@ -17,7 +17,7 @@ class GuestyApiClient
      *
      * @return string API URL
      */
-    public function getApiUrl() {
+    public static function getApiUrl() {
         if (file_exists(__DIR__ . '/config.php')) {
             require __DIR__ . '/config.php';
             return $apiConfig['api_url'];
