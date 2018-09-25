@@ -33,21 +33,21 @@ require_once '../vendor/autoload.php';
 
 Add params parameters.yml.dist
 
-``` bash
-
+```
     username_guesty: 2534356d564e2d37f403b4390478c27ar
     password_guesty: fg587ae597dfaca796c12feb1af9169fre
+```
 
 Add params parameters.yml
 
-``` bash
-
+```
     username_guesty: 2534356d564e2d37f403b4390478c27ar
     password_guesty: fg587ae597dfaca796c12feb1af9169fre
+```
 
 Add params config.yml
 
-``` bash
-
+```
     username.guesty: "%username_guesty%"
     password.guesty: "%password_guesty%"
+```
