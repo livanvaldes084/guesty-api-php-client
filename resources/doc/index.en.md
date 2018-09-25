@@ -10,26 +10,34 @@ The installation process for this client in very simple and you can do it using 
 
 We recommend to use composer to install the client. 
 
-#### 1- Install Composer
+#### 1- Install Composer (not required)
 
 ```cd``` into the directory of your project (eg: my_project) and run:
 
 ```
 curl -sS https://getcomposer.org/installer | php
 ```
+#### 2- Add in composer.json:
 
-#### 2- Add the GUESTYAPIPHPClient package as a dependency by running: 
+```
+        {
+            "type": "vcs",
+            "url": "git@github.com:livanvaldes084/guesty-api-php-client.git"
+        }
+```
+
+#### 3- Add the GUESTYAPIPHPClient package as a dependency by running:
 
 ```
 php composer.phar require guesty/guesty-api-php-client:dev-master
 ```
 
-#### 3- Require Composer's autoloader
+#### 4- Require Composer's autoloader (not required)
 
 ```
 require_once '../vendor/autoload.php';
 ```
-#### 4- Add credentials
+#### 5- Add credentials
 
 Add params parameters.yml.dist
 

@@ -13,7 +13,7 @@ El proceso de instalación de este cliente en muy sencillo y puede hacerse de va
 
 Recomendamos composer para intallar este cliente.
 
-#### 1- Installar Composer
+#### 1- Installar Composer (no obligatorio)
 
 ```cd``` en el directorio de su projecto (ej: my_project) y ejecute:
 
@@ -21,19 +21,29 @@ Recomendamos composer para intallar este cliente.
 curl -sS https://getcomposer.org/installer | php
 ```
 
-#### 2- Adicionar el packete como una dependencia ejecutando:
+#### 2- Agregar en composer.json:
+
+```
+        {
+            "type": "vcs",
+            "url": "git@github.com:livanvaldes084/guesty-api-php-client.git"
+        }
+```
+
+
+#### 3- Adicionar el packete como una dependencia ejecutando:
 
 ```
 php composer.phar require guesty/guesty-api-php-client:dev-master
 ```
 
-#### 3- Requerir el cargador automático de Composer
+#### 4- Requerir el cargador automático de Composer (no obligatorio)
 
 ```
 require_once '../vendor/autoload.php';
 ```
 
-#### 4- Agregar las credenciales
+#### 5- Agregar las credenciales
 
 Añadir los parametros necesarios a parameters.yml.dist
 
