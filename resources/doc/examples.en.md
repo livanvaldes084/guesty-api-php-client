@@ -6,16 +6,19 @@ Examples
 
         use Guesty\GuestyApiPhpClient\GuestyApiClient;
         use Guesty\GuestyApiPhpClient\GuestyApiException;
+```
 
+```
         $path = "users";
         try {
             $info = GuestyApiClient::client($this->container->getParameter('username.guesty'), $this->container->getParameter('password.guesty'), $path, 'GET');
-            print_r($info);die;
             return $info;
         } catch (GuestyApiException $exception) {
             return false;
         }
+```
 
+```
         $path = "users?q=livanvaldes084@gmail.com&limit=1";
         try {
             $info = GuestyApiClient::client($this->container->getParameter('username.guesty'), $this->container->getParameter('password.guesty'), $path, 'GET');
@@ -24,7 +27,7 @@ Examples
             return false;
         }
 
-
+```
         $path = "users";
         $params=array(
             'fullName'=>'Ari Gold',
