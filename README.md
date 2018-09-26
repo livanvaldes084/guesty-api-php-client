@@ -20,4 +20,4 @@ GUESTYAPIPHPClient es el cliente de PHP para consumir la RESTful API de la plata
 Code Examples
 -----------
 
-[Instalación y Configuración](resources/doc/examples.en.md)
+[Examples](resources/doc/examples.en.md)
