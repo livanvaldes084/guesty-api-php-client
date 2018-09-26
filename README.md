@@ -15,3 +15,9 @@ En Español
 GUESTYAPIPHPClient es el cliente de PHP para consumir la RESTful API de la plataforma Guesty.
 
 [Instalación y Configuración](resources/doc/index.es.md)
+
+
+Code Examples
+-----------
+
+[Instalación y Configuración](resources/doc/examples.en.md)
