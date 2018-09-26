@@ -1,12 +1,15 @@
 Examples
 =======================
 
+Include in the class
+--------------------
 ``` 
-<?php
-
         use Guesty\GuestyApiPhpClient\GuestyApiClient;
         use Guesty\GuestyApiPhpClient\GuestyApiException;
 ```
+
+GET example
+-----------
 
 ```
         $path = "users";
@@ -18,6 +21,9 @@ Examples
         }
 ```
 
+GET example query
+-----------------
+
 ```
         $path = "users?q=livanvaldes084@gmail.com&limit=1";
         try {
@@ -26,6 +32,9 @@ Examples
         } catch (GuestyApiException $exception) {
             return false;
         }
+
+POST example
+-----------------
 
 ```
         $path = "users";
